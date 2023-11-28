@@ -1,0 +1,34 @@
+﻿@model IEnumerable<Medicos>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index medicos</h1>
+<a asp-controller="Medico" asp-action="Create">Cadastro de medico</a>
+<table class="table table-brodered table-striped" style="width:100%">
+    <thead>
+        <tr>
+            <th>
+                Nome do medico
+            </th>
+            <th>
+                Especializacao
+            </th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var obj in Model)
+        {
+            <tr>
+                <td width="50%">
+                    @obj.Nome
+                </td>
+                <td width="50%">
+                    @obj.Especializacao
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
+
+
