@@ -50,3 +50,5 @@ _ReSharper*/
 
 # NCrunch
 *ncrunch*
+*.opendb
+*.opensdf
